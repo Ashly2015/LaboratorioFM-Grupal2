@@ -15,6 +15,10 @@ public class NewMDIApplication extends javax.swing.JFrame {
     private Mantenimiento_Empleados ventanaempleados;
     private Mantenimiento_Juegos ventanajuegos;
     private Mantenimiento_Peliculas ventanapeliculas;
+<<<<<<< HEAD
+=======
+    private Devolucion ventanadev;
+>>>>>>> RamaProceso
     
     /**
      * Creates new form NewMDIApplication
@@ -43,7 +47,11 @@ public class NewMDIApplication extends javax.swing.JFrame {
         btnClientes = new javax.swing.JMenuItem();
         btnOperaciones = new javax.swing.JMenu();
         cutMenuItem = new javax.swing.JMenuItem();
+<<<<<<< HEAD
         copyMenuItem = new javax.swing.JMenuItem();
+=======
+        btnDev = new javax.swing.JMenuItem();
+>>>>>>> RamaProceso
         jMenu1 = new javax.swing.JMenu();
         Salir = new javax.swing.JMenuItem();
 
@@ -118,6 +126,7 @@ public class NewMDIApplication extends javax.swing.JFrame {
         });
         btnOperaciones.add(cutMenuItem);
 
+<<<<<<< HEAD
         copyMenuItem.setMnemonic('y');
         copyMenuItem.setText("Devoluciones");
         copyMenuItem.addActionListener(new java.awt.event.ActionListener() {
@@ -126,6 +135,16 @@ public class NewMDIApplication extends javax.swing.JFrame {
             }
         });
         btnOperaciones.add(copyMenuItem);
+=======
+        btnDev.setMnemonic('y');
+        btnDev.setText("Devoluciones");
+        btnDev.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDevActionPerformed(evt);
+            }
+        });
+        btnOperaciones.add(btnDev);
+>>>>>>> RamaProceso
 
         menuBar.add(btnOperaciones);
 
@@ -194,9 +213,17 @@ public class NewMDIApplication extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cutMenuItemActionPerformed
 
+<<<<<<< HEAD
     private void copyMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_copyMenuItemActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_copyMenuItemActionPerformed
+=======
+    private void btnDevActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDevActionPerformed
+        ventanadev=new Devolucion();
+        jDesktopPane1.add(ventanadev);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDevActionPerformed
+>>>>>>> RamaProceso
 
     /**
      * @param args the command line arguments
@@ -238,12 +265,19 @@ public class NewMDIApplication extends javax.swing.JFrame {
     private javax.swing.JMenu Articulos;
     private javax.swing.JMenuItem Salir;
     private javax.swing.JMenuItem btnClientes;
+<<<<<<< HEAD
+=======
+    private javax.swing.JMenuItem btnDev;
+>>>>>>> RamaProceso
     private javax.swing.JMenuItem btnEmpleados;
     private javax.swing.JMenuItem btnJuegos;
     private javax.swing.JMenu btnMantenimiento;
     private javax.swing.JMenu btnOperaciones;
     private javax.swing.JMenuItem btnPeliculas;
+<<<<<<< HEAD
     private javax.swing.JMenuItem copyMenuItem;
+=======
+>>>>>>> RamaProceso
     private javax.swing.JMenuItem cutMenuItem;
     private javax.swing.JDesktopPane desktopPane;
     private javax.swing.JDesktopPane jDesktopPane1;
