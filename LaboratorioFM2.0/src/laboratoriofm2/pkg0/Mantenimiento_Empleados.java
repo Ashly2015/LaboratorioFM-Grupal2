@@ -20,8 +20,6 @@ public class Mantenimiento_Empleados extends javax.swing.JInternalFrame {
      */
     public Mantenimiento_Empleados() {
         initComponents();
-<<<<<<< HEAD
-=======
         
         try{
             Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/LabFM", "root", "Polo.2015");
@@ -38,7 +36,6 @@ public class Mantenimiento_Empleados extends javax.swing.JInternalFrame {
         }catch (Exception e){
 
         }
->>>>>>> RamaProceso
     }
 
     /**
@@ -59,13 +56,9 @@ public class Mantenimiento_Empleados extends javax.swing.JInternalFrame {
         btnModificar = new javax.swing.JButton();
         btnBuscar = new javax.swing.JButton();
         txtbuscado = new javax.swing.JTextField();
-<<<<<<< HEAD
-        label_status = new javax.swing.JLabel();
-=======
         jLabel10 = new javax.swing.JLabel();
         cbox_Tienda = new javax.swing.JComboBox<>();
         lbTienda = new javax.swing.JLabel();
->>>>>>> RamaProceso
 
         setClosable(true);
         setIconifiable(true);
@@ -84,10 +77,7 @@ public class Mantenimiento_Empleados extends javax.swing.JInternalFrame {
         });
 
         btnEliminar.setText("Eliminar");
-<<<<<<< HEAD
-=======
         btnEliminar.setEnabled(false);
->>>>>>> RamaProceso
         btnEliminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEliminarActionPerformed(evt);
@@ -95,10 +85,7 @@ public class Mantenimiento_Empleados extends javax.swing.JInternalFrame {
         });
 
         btnModificar.setText("Modificar");
-<<<<<<< HEAD
-=======
         btnModificar.setEnabled(false);
->>>>>>> RamaProceso
         btnModificar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnModificarActionPerformed(evt);
@@ -112,9 +99,6 @@ public class Mantenimiento_Empleados extends javax.swing.JInternalFrame {
             }
         });
 
-<<<<<<< HEAD
-        label_status.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-=======
         jLabel10.setText("Tienda");
 
         cbox_Tienda.addActionListener(new java.awt.event.ActionListener() {
@@ -124,41 +108,12 @@ public class Mantenimiento_Empleados extends javax.swing.JInternalFrame {
         });
 
         lbTienda.setText("...");
->>>>>>> RamaProceso
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-<<<<<<< HEAD
-                .addGap(20, 20, 20)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(txtEstado_E, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtNombre_E, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(68, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(label_status, javax.swing.GroupLayout.PREFERRED_SIZE, 353, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(btnRegistrar, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(btnModificar, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(39, 39, 39)
-                            .addComponent(btnBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(txtbuscado, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(55, 55, 55))
-=======
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -190,7 +145,6 @@ public class Mantenimiento_Empleados extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lbTienda)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
->>>>>>> RamaProceso
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -203,19 +157,6 @@ public class Mantenimiento_Empleados extends javax.swing.JInternalFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(txtEstado_E, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-<<<<<<< HEAD
-                .addGap(23, 23, 23)
-                .addComponent(label_status, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnRegistrar)
-                    .addComponent(btnEliminar)
-                    .addComponent(btnModificar))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnBuscar)
-                    .addComponent(txtbuscado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-=======
                 .addGap(10, 10, 10)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cbox_Tienda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -231,7 +172,6 @@ public class Mantenimiento_Empleados extends javax.swing.JInternalFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnEliminar)
                     .addComponent(btnModificar))
->>>>>>> RamaProceso
                 .addGap(26, 26, 26))
         );
 
@@ -241,22 +181,6 @@ public class Mantenimiento_Empleados extends javax.swing.JInternalFrame {
     private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
         // TODO add your handling code here:
         try{
-<<<<<<< HEAD
-            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/labfm", "root", "6182");
-            //localhost es 127.0.0.1
-            PreparedStatement pst = cn.prepareStatement("insert into empleados values(?,?,?)");
-            
-            pst.setString(1, "0");
-            pst.setString(2, txtNombre_E.getText().trim());
-            pst.setString(3, txtEstado_E.getText().trim());
-            pst.executeUpdate();
-            
-            txtNombre_E.setText("");
-            txtEstado_E.setText("");
-            label_status.setText("Registro exitoso.");
-        }catch (Exception e){
-            
-=======
             Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/labfm", "root", "Polo.2015");
             //localhost es 127.0.0.1
             PreparedStatement pst = cn.prepareStatement("insert into empleados values(?,?,?,?)");
@@ -277,7 +201,6 @@ public class Mantenimiento_Empleados extends javax.swing.JInternalFrame {
            
         }catch (Exception e){
             JOptionPane.showMessageDialog(this, "¡ERROR DE REGISTRO!", "ERROR", JOptionPane.ERROR_MESSAGE);
->>>>>>> RamaProceso
         }
     }//GEN-LAST:event_btnRegistrarActionPerformed
 
@@ -286,18 +209,6 @@ public class Mantenimiento_Empleados extends javax.swing.JInternalFrame {
         try {
             String ID = txtbuscado.getText().trim();
             
-<<<<<<< HEAD
-            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/labfm", "root", "6182");
-            PreparedStatement pst = cn.prepareStatement("update empleados set Nombre_E = ?, Estado_E = ? where Codigo_E = " + ID);
-            
-            pst.setString(1, txtNombre_E.getText().trim());
-            pst.setString(2, txtEstado_E.getText().trim());
-            pst.executeUpdate();
-            
-            label_status.setText("Modificación exitosa.");
-            
-        } catch (SQLException e) {
-=======
             Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/labfm", "root", "Polo.2015");
             PreparedStatement pst = cn.prepareStatement("update empleados set Nombre_E = ?, COdigo_T=?, Estado_E = ? where Codigo_E = " + ID);
             
@@ -318,28 +229,17 @@ public class Mantenimiento_Empleados extends javax.swing.JInternalFrame {
             
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(this, "¡MODIFICACION ERRONEA!", "ERROR", JOptionPane.ERROR_MESSAGE);
->>>>>>> RamaProceso
         }
     }//GEN-LAST:event_btnModificarActionPerformed
 
     private void btnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarActionPerformed
         // TODO add your handling code here:
         try{
-<<<<<<< HEAD
-            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/labfm", "root", "6182");
-=======
             Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/labfm", "root", "Polo.2015");
->>>>>>> RamaProceso
             PreparedStatement pst = cn.prepareStatement("select * from empleados where Codigo_E = ?");
             pst.setString(1, txtbuscado.getText().trim());
             
             ResultSet rs = pst.executeQuery();
-<<<<<<< HEAD
-            
-            if(rs.next()){
-                txtNombre_E.setText(rs.getString("Nombre_E"));
-                txtEstado_E.setText(rs.getString("Estado_E"));
-=======
             btnEliminar.setEnabled(true);
                btnModificar.setEnabled(true);
             if(rs.next()){
@@ -348,7 +248,6 @@ public class Mantenimiento_Empleados extends javax.swing.JInternalFrame {
                 lbTienda.setText(rs.getString("Codigo_T"));
                 
                 
->>>>>>> RamaProceso
             } else {
                 JOptionPane.showMessageDialog(null, "Empleado no registrado.");
             }
@@ -361,11 +260,7 @@ public class Mantenimiento_Empleados extends javax.swing.JInternalFrame {
     private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
         // TODO add your handling code here:
         try {
-<<<<<<< HEAD
-             Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/labfm", "root", "6182");
-=======
              Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/labfm", "root", "Polo.2015");
->>>>>>> RamaProceso
             PreparedStatement pst = cn.prepareStatement("delete from empleados where Codigo_E = ?");
             
             pst.setString(1, txtbuscado.getText().trim());
@@ -374,24 +269,17 @@ public class Mantenimiento_Empleados extends javax.swing.JInternalFrame {
             txtNombre_E.setText("");
             txtEstado_E.setText("");
             txtbuscado.setText("");
-<<<<<<< HEAD
-            
-            label_status.setText("Registro eliminado.");
-=======
             cbox_Tienda.setSelectedIndex(0);
             lbTienda.setText("");
             
             
             btnEliminar.setEnabled(false);
             btnModificar.setEnabled(false);
->>>>>>> RamaProceso
             
         } catch (SQLException e) {
         }
     }//GEN-LAST:event_btnEliminarActionPerformed
 
-<<<<<<< HEAD
-=======
     private void cbox_TiendaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbox_TiendaActionPerformed
         try{
             Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/LabFM", "root", "Polo.2015");
@@ -414,24 +302,17 @@ public class Mantenimiento_Empleados extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cbox_TiendaActionPerformed
 
->>>>>>> RamaProceso
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBuscar;
     private javax.swing.JButton btnEliminar;
     private javax.swing.JButton btnModificar;
     private javax.swing.JButton btnRegistrar;
-<<<<<<< HEAD
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel label_status;
-=======
     private javax.swing.JComboBox<String> cbox_Tienda;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lbTienda;
->>>>>>> RamaProceso
     private javax.swing.JTextField txtEstado_E;
     private javax.swing.JTextField txtNombre_E;
     private javax.swing.JTextField txtbuscado;

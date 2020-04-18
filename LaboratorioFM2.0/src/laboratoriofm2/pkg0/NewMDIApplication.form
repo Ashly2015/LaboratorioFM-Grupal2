@@ -68,21 +68,13 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cutMenuItemActionPerformed"/>
               </Events>
             </MenuItem>
-<<<<<<< HEAD
-            <MenuItem class="javax.swing.JMenuItem" name="copyMenuItem">
-=======
             <MenuItem class="javax.swing.JMenuItem" name="btnDev">
->>>>>>> RamaProceso
               <Properties>
                 <Property name="mnemonic" type="int" value="121"/>
                 <Property name="text" type="java.lang.String" value="Devoluciones"/>
               </Properties>
               <Events>
-<<<<<<< HEAD
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="copyMenuItemActionPerformed"/>
-=======
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDevActionPerformed"/>
->>>>>>> RamaProceso
               </Events>
             </MenuItem>
           </SubComponents>
