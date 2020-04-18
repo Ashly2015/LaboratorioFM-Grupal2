@@ -337,8 +337,12 @@ public class Mantenimiento_Clientes extends javax.swing.JInternalFrame {
             Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/labfm", "root", "6182");
 =======
             Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/labfm", "root", "Polo.2015");
+<<<<<<< HEAD
 >>>>>>> RamaProceso
             PreparedStatement pst = cn.prepareStatement("select * from clientes where Tarjeta_C = ?");
+=======
+            PreparedStatement pst = cn.prepareStatement("select * from Clientes where Tarjeta_C = ?");
+>>>>>>> RamaProceso
             pst.setString(1, txtbuscado.getText().trim());
             
             ResultSet rs = pst.executeQuery();
@@ -369,9 +373,13 @@ public class Mantenimiento_Clientes extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
          try {
 <<<<<<< HEAD
+<<<<<<< HEAD
              Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/labFM", "root", "Rochi1523");
 =======
              Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/labFM", "root", "Polo.2015");
+>>>>>>> RamaProceso
+=======
+             Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/LabFM", "root", "Polo.2015");
 >>>>>>> RamaProceso
             PreparedStatement pst = cn.prepareStatement("delete from clientes where Tarjeta_C = ?");
             
