@@ -166,6 +166,11 @@ select * from rentas;
 select * from tipo_a;
 select * from Clas_A;
 select * from Genero_A;
+select * from devoluciones;
 
+insert into Rentas values(0,1,1,2,3,25,0,"2020-03-15","2020-04-1");
+insert into Rentas values(0,2,1,2,3,25,0,"2020-03-1","2020-04-2");
+insert into Rentas values(0,1,2,2,3,29,0,"2020-02-15","2020-04-5");
 
+select Fecha_Vencimiento from Rentas where Codigo_R = 1;
 drop database LabFM;
